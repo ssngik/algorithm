@@ -1,7 +1,7 @@
 // https://www.acmicpc.net/problem/2075
 // BOJ_2075_N번째 큰 수
 
-package baekjoon;
+package baekjoon.dataStructure;
 
 import java.io.*;
 import java.util.Arrays;
