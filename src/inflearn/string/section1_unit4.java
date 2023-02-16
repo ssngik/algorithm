@@ -1,4 +1,4 @@
-// 5. 특정 문자 뒤집기
+// 4. 단어 뒤집기
 
 package inflearn.string;
 
@@ -9,26 +9,34 @@ import java.io.InputStreamReader;
 public class section1_unit4 {
     public static void main(String[] args) throws IOException {
 
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        String input = br.readLine();
+        int n = Integer.parseInt(br.readLine()); // n 개의 단어
 
-        int lt=0, rt=input.length()-1;
-        char[] chr = input.toCharArray();
+        String[] input = new String[n]; // n 개의 input 배열
 
-        while(lt<rt){
-            if(!Character.isAlphabetic(chr[lt])) lt++;
-            else if(!Character.isAlphabetic(chr[rt])) rt--;
-            else{
-                char tmp = chr[lt];
-                chr[lt]=chr[rt];
-                chr[rt] = tmp;
+        for(int i=0; i<n; i++) input[i] = br.readLine();
+
+        for(String x : input){
+            int lt=0, rt=x.length()-1;
+
+            char[] s = x.toCharArray();
+
+            while(lt<rt){ // swap
+                char tmp = s[lt];
+                s[lt] = s[rt];
+                s[rt] = tmp;
+
                 lt++;
                 rt--;
+
             }
+
+            System.out.println(s);
+
         }
-        System.out.println(chr);
+
+
 
     }
 }
