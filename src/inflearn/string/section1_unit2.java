@@ -1,3 +1,5 @@
+// 대소문자 변환
+
 package inflearn.string;
 
 import java.io.BufferedReader;
