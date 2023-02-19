@@ -12,17 +12,15 @@ public class section1_unit7 {
         String input = br.readLine();
         String answer="YES";
 
-        input = input.toLowerCase();
 
-//        for(int i=0; i<input.length()/2; i++){
-//            if(input.charAt(i)!=input.charAt(input.length()-i-1)) answer = "NO";
-//        }
+        input = input.toLowerCase().replaceAll("[^a-z]", "");
 
         String tmp = new StringBuilder(input).reverse().toString();
-        if(!tmp.equals(input)) answer="NO";
 
+        if(!input.equals(tmp)) answer="NO";
 
         System.out.println(answer);
+
 
 
     }
