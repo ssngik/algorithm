@@ -24,9 +24,9 @@ public class section2_unit11 {
 
         for (int i = 1; i <= n; i++) {
             int cnt = 0;
-            for (int j = 1; j <= n; j++) {
-                for (int k = 1; k <=5 ; k++) {
-                    if(arr[i][k]==arr[j][k]){
+            for (int j = 1; j <= n; j++) { // i 학생과 같은 반을 했던 학생이 몇 명 있는지
+                for (int k = 1; k <=5 ; k++) { // 학년 ( 1 ~ 5 )
+                    if(arr[i][k]==arr[j][k]){ // i 번 학생의 k 학년 과 j 번 학생의 k 학년이 같은지
                         cnt++;
                         break;
                     }
