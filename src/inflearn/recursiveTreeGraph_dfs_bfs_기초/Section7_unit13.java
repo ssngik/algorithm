@@ -1,6 +1,6 @@
 package inflearn.recursiveTreeGraph_dfs_bfs_기초;
 // Section7_unit13_경로탐색(인접리스트, ArrayList)
-
+// 정점 개수가 많아지면 ArrayList 로
 import java.util.*;
 class Main {
     static int n, m, answer=0;
