@@ -1,4 +1,4 @@
-package inflearn.dynamicProgramming;
+package inflearn.dp;
 
 import java.util.*;
 
