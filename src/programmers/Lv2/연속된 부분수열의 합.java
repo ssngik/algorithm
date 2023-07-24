@@ -1,8 +1,8 @@
-package programmers.D2;
+package programmers.Lv2;
+
 
 // 연속된 부분수열의 합
-public class D2_1 {
-
+class 연속된_부분수열의_합 {
     public int[] solution(int[] sequence, int k) {
         int[] answer = new int[2];
         int leftAns = 0;
