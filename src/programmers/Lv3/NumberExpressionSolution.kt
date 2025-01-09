@@ -1,6 +1,6 @@
 package programmers.Lv3
 
-class Solution {
+class NumberExpressionSolution {
     fun solution(N: Int, number: Int): Int {
         if (N == number) return 1
         val dp = Array(9) { mutableSetOf<Int>() }
