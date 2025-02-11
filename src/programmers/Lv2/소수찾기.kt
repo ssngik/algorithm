@@ -23,7 +23,7 @@ fun solution(numbers: String): Int {
 fun isPrime(num: Int) : Boolean {
     if (num < 2) return false
     for (i in 2..sqrt(num.toDouble()).toInt()) {
-        if (num % 2 == 0) return false
+        if (num % i == 0) return false
     }
     return true
 }
